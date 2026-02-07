@@ -5,9 +5,7 @@
   "description": "A curated collection of Claude Code plugins: multi-agent dev team, AI council code reviews, and project management",
   "scripts": {
     "validate": "bun scripts/validate-plugins.mjs",
-    "release:preflight": "test -z \"$(git status --porcelain)\" || (echo 'Working directory not clean' && git status --short && exit 1)",
-    "release": "npm run release:preflight && semantic-release --no-ci",
-    "release:dry": "npm run release:preflight && semantic-release --no-ci --dry-run"
+    "release:dry": "semantic-release --dry-run"
   },
   "repository": {
     "type": "git",
@@ -18,6 +16,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/exec": "^7.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^11.0.1",
     "@semantic-release/release-notes-generator": "^14.0.1",
