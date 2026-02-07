@@ -1,6 +1,6 @@
 # Plugin Authoring Guide
 
-How to create and publish a plugin in the cc-skills marketplace.
+How to create and publish a plugin in the interstate-skills marketplace.
 
 ## Plugin Structure
 

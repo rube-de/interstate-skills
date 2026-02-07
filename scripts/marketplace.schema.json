@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/rube-de/cc-skills/marketplace.schema.json",
+  "$id": "https://github.com/rube-de/interstate-skills/marketplace.schema.json",
   "title": "Claude Code Skills Marketplace",
-  "description": "JSON Schema for cc-skills marketplace.json plugin registry",
+  "description": "JSON Schema for interstate-skills marketplace.json plugin registry",
   "type": "object",
   "required": ["name", "version", "description", "owner", "plugins"],
   "properties": {

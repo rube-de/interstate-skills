@@ -1,4 +1,4 @@
-# CC Skills
+# Interstate Skills
 
 A monorepo of [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plugins and [agent skills](https://agentskills.io).
 
@@ -25,32 +25,32 @@ A monorepo of [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plug
 
 ```sh
 # List available skills
-npx skills add rube-de/cc-skills --list
+npx skills add rube-de/interstate-skills --list
 
 # Install specific skills
-npx skills add rube-de/cc-skills --skill project-manager
-npx skills add rube-de/cc-skills --skill council
+npx skills add rube-de/interstate-skills --skill project-manager
+npx skills add rube-de/interstate-skills --skill council
 
 # Install all skills
-npx skills add rube-de/cc-skills --skill '*'
+npx skills add rube-de/interstate-skills --skill '*'
 ```
 
 ### Plugins (via Claude Code marketplace)
 
 ```sh
 # Add the marketplace
-claude plugin marketplace add rube-de/cc-skills
+claude plugin marketplace add rube-de/interstate-skills
 
 # Install plugins
-claude plugin install council@rube-de/cc-skills
-claude plugin install claude-dev-team@rube-de/cc-skills
-claude plugin install project-manager@rube-de/cc-skills
+claude plugin install council@rube-de/interstate-skills
+claude plugin install claude-dev-team@rube-de/interstate-skills
+claude plugin install project-manager@rube-de/interstate-skills
 ```
 
 ## Structure
 
 ```
-cc-skills/
+interstate-skills/
 ├── .claude-plugin/
 │   └── marketplace.json     ← Plugin registry (SSoT)
 ├── plugin.json              ← Root metadata
@@ -81,13 +81,13 @@ cc-skills/
 The marketplace repo may be out of sync.
 
 ```bash
-cd ~/.claude/plugins/marketplaces/cc-skills && git pull
-claude plugin install plugin-name@rube-de/cc-skills
+cd ~/.claude/plugins/marketplaces/interstate-skills && git pull
+claude plugin install plugin-name@rube-de/interstate-skills
 ```
 
 ### Slash Commands Not Appearing
 
-1. Verify the plugin is installed: `cat ~/.claude/plugins/installed_plugins.json | grep cc-skills`
+1. Verify the plugin is installed: `cat ~/.claude/plugins/installed_plugins.json | grep interstate-skills`
 2. Restart Claude Code (fresh session required)
 
 ### Hooks Not Working

@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Claude Code skills marketplace: **3 plugins** for multi-agent development, AI council reviews, and project management.
+Interstate Skills marketplace: **3 plugins** for multi-agent development, AI council reviews, and project management.
 
 ## Navigation
 
@@ -21,7 +21,7 @@ Claude Code skills marketplace: **3 plugins** for multi-agent development, AI co
 ## Directory Structure
 
 ```
-cc-skills/
+interstate-skills/
 ├── .claude-plugin/
 │   └── marketplace.json         ← Plugin registry (SSoT)
 ├── plugin.json                  ← Root plugin metadata
